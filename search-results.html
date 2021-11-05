@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library of Congress | Search Results</title>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Alata&family=Alice&family=Cinzel&family=Crimson+Pro:wght@200&family=Overpass+Mono:wght@300&family=Varela+Round&family=Volkhov&family=Zen+Antique&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="flex-row align-center justify-center min-100-vh bg-primary">
+    <div class="col-12 col-md-9 flex-column align-center bg-light p-5">
+      <h1 class="text-primary">Search Engine for the Library of Congress</h1>
+      <form id="search-input" class="form-input w-100" type="text" aria-placeholder="Search...">
+        <select id="form-input" class="form-input w-100">
+          <option value="" disabled selected>Select format...</option>
+          <option value="maps">Maps</option>
+          <option value="audio">Audio</option>
+          <option value="photos">Photos</option>
+          <option value="manuscripts">Manuscripts</option>
+          <option value="newspapers">Newspapers</option>
+          <option value="film-and-videos">Filam and Videos</option>
+          <option value="notated-music">Notated Music</option>
+          <option value="websites">Websites</option>
+        </select>
+        <button class="btn btn-info btn-block">Click</button>
+      </form>
+              <!-- return to index.html -->
+        <a href="./index.html" class="btn btn-block btn-danger">&larr; Return</a>
+
+    </div>
+
+    <div class="col-12 col-md-9 p-3 text-light">
+      <h2>Results shown for <span id="result-text"></span></h2>
+      <div id="result-content"></div>
+    </div>
+  </div>
+            <!-- link javascript ofr diplay search -->
+  <script src="./assets/js/display-search.js"></script>
+  
+</body>
+</html>
